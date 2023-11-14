@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="DosisPed.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="descripcion">
+         <div id="textdesc">
+            Calculadora de dosis pediátrica
+        </div>
+    </div>
+    <div class="container">
+        <div id="calculadora">
+            <div id="inputdata">
+                <div class="inputtext">
+                    <b>Introduce los datos:</b>
+                </div>
+                <div id="dataform">
+                    <input type="number" placeholder="Peso (kg)" class="inputped" id="peso"> 
+                    <input type="number" placeholder="Dosis (mg or mEq)" class="inputped" id="dosis">
+                    <input type="number" placeholder="Dosis de presentación (mg or mEq)" class="inputped" id="dosismanual"> 
+                    <input type="number" placeholder="Mililitros de presentación" class="inputped" id="presentacionmanual"> 
+                </div>
+                <div id="botondiv">
+                    <button id="calc">Calculate</button> 
+                 </div>
+            </div>
+            <div id="dosispres">
+                <div class="inputtext">
+                    <b>Medicamento a administrar:</b>
+                </div>
+                <div class="wrapper1">
+                    <div class="select-btn">
+                    <span id="textbtn">Dosis manual</span>
+                    <img src="flecha-hacia-abajo.png" id="flecha-hacia-abajo">
+                    </div>
+                    <div class="content1">
+                        <div class="search">
+                            <input type="search" placeholder="Search...">
+                        </div>
+                        <ul class="options" id="options">
+                        
+                        </ul>
+                    </div>
+                </div>
+               <div class="inputtext">
+                        <b>Presentación del medicamento:</b>
+               </div>
+              <div class="wrappers">
+                    <div class="select-btns">
+                    <span id="textbtns">Presentación manual</span>
+                    <img src="flecha-hacia-abajo.png" id="flecha-hacia-abajo">
+                    </div>
+                    <div class="content1s">
+                        <div class="searchs">
+                            <input type="search" placeholder="Search..." id="busqueda">
+                        </div>
+                        <ul class="optionss" id="optionss">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div id="finalres">
+            <div id="resultado">
+            </div>
+            <div id="posologia">
+            </div>
+        </div>
+    </div>
+    <script src="dosisped.js"></script>
+</body>
+</html>
